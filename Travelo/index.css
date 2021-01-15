@@ -1,0 +1,154 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    text-align: center;
+    background-image: url('images/background2.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+    color: aqua;
+    text-align: center;
+}
+
+/*    Card Style    */
+
+.card 
+{
+    display: inline-grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+
+    margin:30px;
+    width: 300px;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+}
+
+.card:hover 
+{
+    transform: scale(1.10);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.card-image 
+{
+    grid-area: image;
+}
+
+.card-text 
+{
+    grid-area: text;
+}
+
+.card-stats 
+{
+    grid-area: stats; 
+}
+
+.card-image 
+{
+    grid-area: image;
+    background: url("images/newyork.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text 
+{
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text .date 
+{
+    color: cornflowerblue;
+    font-size:20px;
+}
+
+.card-text p 
+{
+    color: grey;
+    font-size:15px;
+    font-weight: 300;
+}
+
+.card-text h2 
+{
+    margin:5px;
+    font-size:38px;
+    color: cornflowerblue;
+}
+
+.card-stats 
+{
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: cornflowerblue;
+}
+
+.card-stats .stat 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+    padding:10px;
+}
+
+.card-image
+{
+    grid-area: image;
+    background: url("images/Dubai.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.read-more
+{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: cornflowerblue;
+}
+
+.btn
+{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.button 
+{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border: none;
+}

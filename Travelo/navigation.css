@@ -1,0 +1,116 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    text-align: center;
+    background-image: url('images/background2.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+    color: aqua;
+}
+
+                    /*    Navigation Bar Style    */
+
+i 
+{
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  margin: 3px;
+}
+
+
+.navigation
+{
+    border-bottom-style: solid;
+    border-bottom-color: aqua;
+    border-bottom-width: thin;
+}
+
+.navigation label
+{
+    list-style: none;
+    margin-top: 22px;
+    margin-left: 200px;
+    color: aqua;
+}
+
+.navigation ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: aqua;
+    margin-left: 550px;
+}
+
+.navigation ul li
+{
+    width: 100px;
+    margin: 5px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.navigation ul a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation ul li:hover
+{
+    transform: scale(1.08);
+    background: cornflowerblue;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+                            /*    Sub Menu Style    */
+
+.sub-menu
+{
+    display: none;
+}
+
+.navigation ul li:hover .sub-menu
+{
+    display: block;
+    position: absolute;
+    background: cornflowerblue;
+    margin-top: 5px;
+    margin-left: -5px;
+}
+
+.navigation ul li:hover .sub-menu ul
+{
+    display: block;
+    margin: 10px;
+}
+
+.navigation ul li:hover .sub-menu ul li
+{
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.navigation ul li:hover .sub-menu ul li:last-child
+{
+    border-bottom: none;
+}
+
+.navigation ul li:hover .sub-menu ul li a:hover
+{
+    color: #b2ff00;
+}

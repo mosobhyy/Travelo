@@ -1,0 +1,23 @@
+<form class="flight">
+    <fieldset>
+        <legend>
+            <h3>Booking Flight</h3>
+        </legend>
+        <select class="select-css" name="seatClass" required>
+            <option selected hidden>Seat Class</option>
+            <option>Economy</option>
+            <option>Premium Economy</option>
+            <option>First Class</option>
+            <option>Business Class</option>
+        </select >
+        <input type="number" placeholder="Seat Number" name="seatNumber" required>
+        <select class="select-css" name="paymentCard" required>
+            <option selected hidden>Credit Card</option>
+            <option>Visa</option>
+            <option>Master Card</option>
+        </select >
+        <input type="text" placeholder="Credit-Card Number" name="cardNumber" required>
+        <input type="password" placeholder="Credit-Card Password" name="cardPassword" required>
+        <input type="submit" class="btn" value="Book" name="book">
+    </fieldset>
+</form>
